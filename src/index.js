@@ -2,16 +2,32 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Login from './components/Login';
+import Register from './components/Register';
+import Movie from './components/Movie';
+import Showtime from './components/Showtime';
+import MovieSeat from './components/MovieSeat';
+import Transaction from './components/Transaction';
+import UserInfo from './components/UserInfo';
+import Report from './components/Report';
+import {Router,Route,Link,BrowserRouter} from 'react-router-dom'
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <BrowserRouter>
+    <Route path='/home' component={App}/>
+    <Route path='/login' component={Login}/>
+    <Route path='/register' component={Register}/>
+    <Route path='/movie' component={Movie}/>
+    <Route path='/showtime' component={Showtime}/>
+    <Route path='/movie_seat' component={MovieSeat}/>
+    <Route path='/transaction' component={Transaction}/>
+    <Route path='/userInfo' component={UserInfo}/>
+    <Route path='/Report' component={Report}/>
+  </BrowserRouter>,document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
