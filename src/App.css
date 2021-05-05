@@ -1,9 +1,8 @@
 body, html {
     min-height: 100%;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    padding-top: 45px;;
-    position: relative;
+    position: absolute;
     font-family: "Poppins", sans-serif;
 }
 
@@ -11,12 +10,25 @@ body, html {
   height: 100%;
 }
 
+.btn-red{
+  background-color: #bb1313;
+}
+.btn-grey{
+  background-color: #353535;
+}
+
+.reduce-img{
+  height:auto;
+  width:auto;
+}
+
 .background-image {
   background-image: url("https://entrepreneurship.babson.edu/wp-content/uploads/2020/10/Movie-1200-630.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   position: relative;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -188,3 +200,65 @@ h2.active {
   width:60%;
 }
 
+.opacity-0 {
+  opacity:0!important;
+}
+.opacity-1 {
+  opacity:0.2!important;
+}
+.opacity-2 {
+  opacity:0.4!important;
+}
+.opacity-3 {
+  opacity:0.6!important;
+}
+.opacity-4 {
+  opacity:.8!important;
+}
+.opacity-5 {
+  opacity:1!important;
+}
+.bg-opacity-4 {
+
+  opacity:0.8!important;
+}
+
+.card-body-bg {
+  background: rgba(73, 73, 73, 0.8);
+}
+
+.grad1 {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgb(54, 54, 54) 0%, rgb(196, 196, 196) 35%, rgb(54, 54, 54) 100%);
+}
+
+.poster{
+  height:auto;
+  width:auto;
+}
+
+.rounded {
+  border-radius: 1rem;
+  }
+
+  .box {
+    max-width: 600px;
+  }
+
+  .grey{
+    background: rgb(201, 201, 201);
+  }
+
+  .dark-grey{
+    background:rgb(161, 161, 161);
+  }
+
+  .st-poster{
+    height: auto;
+    width: auto;
+  }
+
+  .showtime-poster{
+    height: 80%;
+    width: 50%;
+  }
